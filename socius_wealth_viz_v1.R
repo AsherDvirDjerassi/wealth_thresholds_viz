@@ -120,9 +120,9 @@ figure <-
     pointPadding = 0,
     enableMouseTracking = TRUE)) %>% 
   hc_yAxis_multiples(
-    list(title = list(text = "Wealth in 2019 USD", style = list(fontSize = '15px')), opposite = FALSE),
-    list(title = list(text = "Wealth in 2019 USD", style = list(fontSize = '15px')), opposite = TRUE)) %>%
-  hc_xAxis(title = list(text = "Wealth Percentiles", style = list(fontSize = '15px')),
+    list(title = list(text = "Wealth in 2019 USD", style = list(fontSize = '13px')), opposite = FALSE),
+    list(title = list(text = "Wealth in 2019 USD", style = list(fontSize = '13px')), opposite = TRUE)) %>%
+  hc_xAxis(title = list(text = "Wealth Percentiles", style = list(fontSize = '13px')),
            categories = df_quantiles$quantiles, 
            showFirstLabel = TRUE,
            showLastLabel = TRUE,
@@ -164,3 +164,4 @@ figure <-
   )
 
 save_html(figure, file = 'figure.html')
+
