@@ -163,5 +163,6 @@ figure <-
     borderWidth = 1   # No border on the tooltip shape
   )
 
-save_html(figure, file = 'figure.html')
+save_html(figure, file = '/Users/asherd/Library/Mobile Documents/com~apple~CloudDocs/3.github/wealth_threshold/figure.html')
+wtd.quantile()
 
