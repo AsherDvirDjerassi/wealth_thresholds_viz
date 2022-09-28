@@ -1,6 +1,6 @@
 # Authors: Asher Dvir-Djerassi and Fabian Pfeffer
 # Date Began: 09/21/22
-# Last Updated: 09/25/22
+# Last Updated: 09/28/22
 
 # Description: This program creates an interactive visualization that is exported as an HTML file.
 # Data: 2019 Survey of Consumer Finances (SCF) public use file and the 2019 Forbes 400.
@@ -125,21 +125,8 @@ figure <-
   hc_xAxis(title = list(text = "Wealth Percentiles", style = list(fontSize = '13px')),
            categories = df_quantiles$quantiles, 
            showFirstLabel = TRUE,
-           showLastLabel = TRUE,
-           plotBands = list(
-             list(
-               from = 49,
-               to = 49,
-               color = "rgba(0, 0, 0, 0.5)"
-             )
-           )
+           showLastLabel = TRUE
         ) %>%
-  hc_annotations(
-    list(
-      labels = list(
-        list(point = list(x = 49, y = 5, xAxis = 0, yAxis = 0), text = "Median"))
-    )
-  ) %>%
   hc_add_series(data = round(df_quantiles$Thresholds), name = "Wealth Thresholds", color = "grey", showInLegend = FALSE, visible = TRUE) %>%
   hc_add_series(name = "<p style='font-size:15px; color:black'> Include Forbes 400 wealth threshold </p>", data = round(df_quantiles$`Forbes 400`), color = "red", showInLegend = TRUE, visible = FALSE,  fontSize = '200px') %>%
   hc_legend(
@@ -163,6 +150,4 @@ figure <-
     borderWidth = 1   # No border on the tooltip shape
   )
 
-save_html(figure, file = '/Users/asherd/Library/Mobile Documents/com~apple~CloudDocs/3.github/wealth_threshold/figure.html')
-wtd.quantile()
-
+save_html(figure, file = 'figure.html')
