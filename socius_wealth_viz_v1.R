@@ -91,7 +91,7 @@ df_quantiles$quantiles[100] <- c("Forbes 400")
 
 df_quantiles$"Forbes 400" <- 0
 df_quantiles$"Forbes 400"[100] <- min(subset(forbes_400$NETWORTH, forbes_400$YEAR == 2019))
-df_quantiles$Thresholds <- c(wtd.quantile(subset(scf_2019_forbes$NETWORTH,scf_2019_forbes$Forbes_indicator == 0), seq(.01, .99, by = .01), weight = subset(scf_2019_forbes$WGT,scf_2019_forbes$Forbes_indicator == 0)),NA)
+df_quantiles$Thresholds <- c(wtd.quantile(subset(scf_2019_forbes$NETWORTH,scf_2019_forbes$Forbes_indicator == 0), seq(.01, .99, by = .01), weight = subset(scf_2019_forbes$WGT,scf_2019_forbes$Forbes_indicator == 0)), NA)
 
 #############################
 #### Highcharter Options ####
@@ -107,10 +107,9 @@ options(highcharter.lang = lang)
 ########## Figure 1 #########
 #############################
 
-figure <-
- highchart() %>%
+highchart() %>%
   hc_chart(type ="column",
-           barBorderWidth = 0) %>%
+           barBorderWidth = 1) %>%
   hc_title(text = "Figure 1: Wealth thresholds") %>%
   hc_chart(zoomType = "x") %>%
   hc_plotOptions(column = list(
@@ -124,6 +123,7 @@ figure <-
     list(title = list(text = "Wealth in 2019 USD", style = list(fontSize = '13px')), opposite = TRUE)) %>%
   hc_xAxis(title = list(text = "Wealth Percentiles", style = list(fontSize = '13px')),
            categories = df_quantiles$quantiles, 
+           type = "category",
            showFirstLabel = TRUE,
            showLastLabel = TRUE
         ) %>%
@@ -149,5 +149,3 @@ figure <-
     shape = "callout", # Options are square, circle and callout
     borderWidth = 1   # No border on the tooltip shape
   )
-
-save_html(figure, file = 'figure.html')
