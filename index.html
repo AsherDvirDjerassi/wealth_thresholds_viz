@@ -1,13 +1,3 @@
-
-<!-- 
-</head>
-<body>
-<iframe width="100%" height="100%" src="figure1.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</body>
-</html>
-//-->
-
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -64,16 +54,18 @@
 
 
 <h3>Abstract</h3>
-<p></p>
-<p>/p>
 
-<h3>Description</h3>
 <p></p>
+
 <p> Although extreme and rising levels of U.S. wealth inequality have generated much public and scientific interest, building intuition on the shape and scale of today’s wealth distribution remains difficult. Prior research tends to conceptualize and measure wealth inequality in one of two ways: As the concentration of assets among the super-wealthy (e.g. Keister 2014; Saez and Zucman 2020) – i.e., wealth concentration among the top 1% or even top 0.1% – or as a population-wide phenomenon of distributional inequality (e.g. Keister and Moller 2000; Killewald et al. 2016) – i.e., wealth inequality among the remaining 99%. Of course, both perspectives are valid and important; they simply focus on different slices of the overall wealth distribution, sometimes due to limitations of the data that are being used. Extreme concentration of wealth at the very top and very high levels of inequality within the remainder of the distribution thus co-exist. Yet, jointly visualizing both aspects and relating them to each other is challenging. This contribution addresses this challenge by providing an intuitive and interactive visualization of the distribution of U.S. wealth in 2019 that spans the full population, from households in net debt to multi-billionaires. </p>
 
 <p></p>
 
-<p> Figure 1a shows estimated household net worth in 2019 USDs based on the latest available 2019 wave of the Survey of Consumer Finances (SCF), which is widely held to be the gold-standard survey to capture U.S. households’ assets and liabilities. The figure plots the threshold value of each percentile of the wealth distribution.  In the interactive version (available here:  https://asherdvirdjerassi.github.io/wealth_thresholds_viz/), the exact estimated values are revealed upon hovering over each bar. For instance, highlighting the 75th percentile of the wealth distribution reveals that three quarters of all U.S. households in 2019 had a net worth of $404,101 or less. The most obvious visual impression of Figure 1 is the strong right-skew of the wealth distribution. In fact, in this initial display, the bottom half of the distribution all but disappears, reflective of the empirical reality that the wealth held by the majority of U.S. households pales in comparison to the wealth of, say, the wealthiest 20%.</p>
+<h3>Description</h3>
+
+<p></p>
+
+<p> Figure 1a shows estimated household net worth in 2019 USDs based on the latest available 2019 wave of the Survey of Consumer Finances (SCF), which is widely held to be the gold-standard survey to capture U.S. households’ assets and liabilities. The figure plots the threshold value of each percentile of the wealth distribution.  In the interactive version (available here: <a href="figure1.html"> https://asherdvirdjerassi.github.io/wealth_thresholds_viz/figure1.html</a>), the exact estimated values are revealed upon hovering over each bar. For instance, highlighting the 75th percentile of the wealth distribution reveals that three quarters of all U.S. households in 2019 had a net worth of $404,101 or less. The most obvious visual impression of Figure 1 is the strong right-skew of the wealth distribution. In fact, in this initial display, the bottom half of the distribution all but disappears, reflective of the empirical reality that the wealth held by the majority of U.S. households pales in comparison to the wealth of, say, the wealthiest 20%.</p>
 
 <p></p>
 
@@ -87,10 +79,21 @@
 
 <p>In conclusion, our interactive visualization can serve as a tool to explore and gain intuition of the drastic inequality in wealth across the full population while at the same time allowing the display of a level of wealth at the top that could safely be described as “off the charts”. It is difficult to have both aspects of wealth inequality simultaneously in view and perhaps even in mind. Yet, it is important to jointly display and conceptually relate the fact that one in ten U.S. households (or, about 13.4 million households) have less than no wealth while a few hundred families hold wealth that towers over even the wealth at the 99th percentile. After all, these two aspects of wealth inequality may not be unrelated to each other.</p>
 
+<p></p>
+
+<h3> <a href="figure1.html"> See Figure 1 in Fullscreen </a> </h3>
+<body>
+<iframe width="100%" height="520" src="figure1.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+
+
 <h3>Technical Note</h3>
 
 <p></p>
-<p>The visualization was produced using R and the highcharts library. Data and code to reproduce it are available at https://github.com/AsherDvirDjerassi/wealth_thresholds_viz. In the Supplemental Material, we describe our data, sample, and measures in more detail.</p>
+
+<p>The visualization was produced using R and the highcharts library. Data and code to reproduce it are available at <a href="https://github.com/AsherDvirDjerassi/wealth_thresholds_viz">https://github.com/AsherDvirDjerassi/wealth_thresholds_viz</a>. In the Supplemental Material, we describe our data, sample, and measures in more detail.</p>
+
+<p></p>
 
 <h3>References</h3>
 <p></p>
@@ -100,13 +103,20 @@
 <p>Saez, Emmanuel, and Gabriel Zucman. 2020. “The Rise of Income and Wealth Inequality in America: Evidence from Distributional Macroeconomic Accounts.” Journal of Economic Perspectives 34(4):3–26.</p>
 <p>Wolff, Edward N. 2017. A Century of Wealth in America. Cambridge: Belknap Press.</p>
 
-<h3>Acknowledgments</h3>
-<p></p>
-<p>We thank Abhraneel Sarma for his excellent research assistance, Adam Pearce for making available some of the javascript code behind the visualizations reported in Badger et al. (2018), and Socius reviewers for their valuable feedback. Our work on intergenerational wealth correlations has been supported by a grant from the Russell Sage Foundation and the W. K. Kellogg Foundation. The collection of PSID data used here was partly supported by the National Institutes of Health (R01 HD069609) and the National Science Foundation (1157698). Any opinions expressed are those of the authors alone and should not be construed as representing the opinions of the funding agencies.</p>
+<h3>Support</h3>
 
-<h3>Supplemental Material</h3>
 <p></p>
-<p>Background materials and supplementary analyses are available <a href="supplement.html">here</a></p>
+<p>The visualization was created with support from the Stone Center for Inequality Dynamics and an NICHD training grant to the Population Studies Center at the University of Michigan (T32HD007339). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.</p>
+<p></p>
+
+<h3>Supplemental Information</h3>
+
+<p></p>
+
+<p>Supplemental information is available <a href="supplement.html">here</a></p>
+
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+
 
 				</div>
 			</div>
