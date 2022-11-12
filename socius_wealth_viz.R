@@ -17,10 +17,6 @@
 install.packages("formattable", repos = "http://cran.us.r-project.org")
 library("formattable")
 
-# # 
-# install.packages("ggplot2", repos = "http://cran.us.r-project.org")
-# library("ggplot2")
-
 # The wrapper for highcharts, highcharter, imports most need packages in addition to being core to the visualizatio.
 # Imported dependencies:	htmlwidgets, magrittr, purrr, rlist, assertthat, zoo, dplyr (≥ 1.0.0), tibble (≥ 1.1), stringr (≥ 1.3.0), broom, xts, quantmod, tidyr, htmltools, jsonlite, igraph, lubridate, yaml, rlang (≥ 0.1.1), rjson
 install.packages("highcharter", repos = "http://cran.us.r-project.org")
@@ -34,10 +30,6 @@ library("reldist")  #For computing weighted statistics
 # Allows saving an HTML object to a file
 install.packages("htmltools", repos = "http://cran.us.r-project.org")
 library("htmltools")
-
-# # Allows saving an HTML object to a file
-# install.packages("htmlwidgets", repos = "http://cran.us.r-project.org")
-# library("htmlwidgets")
 
 # Checks if pandoc is installed and prints its location
 install.packages("pandoc", repos = "http://cran.us.r-project.org")

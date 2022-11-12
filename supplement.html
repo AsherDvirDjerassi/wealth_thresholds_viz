@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<!-- Bootstrap Core JS  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- Bootstrap Core CSS  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+
+	<style>
+		h1 {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 800;
+			font-size: 24px;
+			line-height: 28px;
+		}
+		h3 {
+			margin-top: 32px;
+			margin-bottom: 0px;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 800;
+			font-size: 16px;
+			line-height: 21px;
+		}
+		p {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+		}
+		a {
+			color: #dc2127;
+		}
+		a:hover,
+		a:focus,
+		a:active{
+		  color: #CC1F24;
+		  text-decoration: none;
+		}
+	</style>		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+<h1>Supplemental Material</h1>
+
+<p style="color:red;"><i><a href="index.html">Back to main article</a></i></p>
+
+<h3>Data, Sample, Variables</h3>
+<p></p>
+
+<h3>References</h3>
+<p></p>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
+
+Supplementary Information
+
+Data and Sample
+The figures presented here visualize data from the 2019 Survey of Consumer Finances (SCF) – the leading representative survey of household net worth (assets minus liabilities) in the United State, which is publicly accessible from the Federal Reserve Board. This (typically) triennial survey defines household net worth as the sum of real estate, consumer durables (e.g., vehicle wealth), business assets, other non-financial assets, and financial assets. Notably, though, the SCF excludes the net present value of defined benefit pensions from its measure of net worth. 
+To more accurately capture wealth at the top of the distribution, the SCF oversamples high wealth households using a list of high-income households provided by the Internal Revenue Service’s Statistics of Income (SOI) division (Kennickel 2009). SCF uses a complex weighting scheme to achieve population representation while reducing the risks of allowing the identification of specific, very wealthy respondents (Kennickell 1999). This strategy, however, is deemed insufficient to protect the identity of the very wealthiest households in the United States given their extreme levels of wealth and widely available public data on them. The SCF, therefore, excludes households with a household member on the Forbes 400 list (Bricker et al. 2019).
+The Forbes 400 list has been produced by Forbes Magazine since 1982 and is updated every year to include the 400 wealthiest individuals in the US. While few of the details of the data collection and measurement are shared, the general strategy is to ascertain wealth-holdings from public filings (such as Securities and Exchange Commission documents, court filings, or probate records), newspaper reports, revenue or profit estimates for public and privately held companies, as well as direct interviews with individuals on the list, their staff, or others with relevant information (Peterson-Withorn 2022; see also Korom et al. 2017). The Forbes 400 list for 2019 has been archived by Forbes magazine and can be found here: https://www.forbes.com/ajax/list/data?year=2019&uri=forbes-400&type=person 
+
+Definition of Percentiles
+Percentiles are created via the R wtd.quantile function, which is part of the wtd.stats package. This package allows for the incorporation of sample weights. By default, the wtd.quantile function defines quantiles inclusively. In order to derive quantile thresholds, wtd.quantile uses a linear interpolation approach.
+
+Unit of Analysis
+The SCF’s unit of analysis is the household. For the Forbes 400, the unit of analysis is ostensibly the individual, although, in many cases the true unit of observation are families. This is particularly true in the case of dispersed family fortunes, where Forbes associates such family fortunes with the name of the founder of the fortune and includes the phrase “and family” next to this person’s name (Peterson-Withorn 2022). Additionally, in the case of married billionaires, it is often ambiguous how to separate household net worth – e.g., the 2019 Forbes 400 include both Bill and Melinda Gates (prior to their divorce).
+
+References
+Bricker, Jesse, Peter Hansen, and Alice Henriques Volz. 2019. "Wealth concentration in the US 
+after augmenting the upper tail of the survey of consumer finances." Economics Letters 
+184: 108659.
+Kennickell, Arthur. 1999. “Revisions to the SCF Weighting Methodology: Accounting for Race/Ethnicity and Homeownership”. Washington: Board of Governors of the Federal Reserve System: https://www .federalreserve.gov/econresdata/scf/scf_workingpapers.htm
+Kennickell, Arthur. 2009. “Getting to the Top: Reaching Wealthy Respondents in the SCF”. Paper presented at the 2009 Joint Statistical Meetings, Washington D.C.: https://www.federalreserve.gov/econresdata/scf/files/ASA200911.pdf
+Korom, Philipp, Mark Lutter, and Jens Beckert. 2017. “The Enduring Importance of Family Wealth: Evidence from the Forbes 400, 1982 to 2013.” Social Science Research 65:75–95
+Peterson-Withorn, Chase. 2022. "2022 Forbes 400 Methodology: How We Crunch The 
+Numbers." Forbes, September 27. Retrieved September 27, 2022 
+(https://www.forbes.com/sites/chasewithorn/2022/09/27/2022-forbes-400-methodology-how-we-crunch-the-numbers/?sh=5a580c4ad0eb)
+

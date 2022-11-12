@@ -1,5 +1,115 @@
+
+<!-- 
 </head>
 <body>
 <iframe width="100%" height="100%" src="figure1.html" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </body>
+</html>
+//-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<!-- Bootstrap Core JS  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- Bootstrap Core CSS  -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+
+	<style>
+		h1 {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 800;
+			font-size: 24px;
+			line-height: 28px;
+		}
+		h3 {
+			margin-top: 32px;
+			margin-bottom: 0px;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 800;
+			font-size: 16px;
+			line-height: 21px;
+		}
+		p {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+		}
+		a {
+			color: #dc2127;
+		}
+		a:hover,
+		a:focus,
+		a:active{
+		  color: #CC1F24;
+		  text-decoration: none;
+		}
+	</style>		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+
+<h1>The U.S. Wealth Distribution: Off the Charts</h1>
+<p>Fabian T. Pfeffer & Asher Dvir-Djerassi</p>
+  	
+<p>Published in <i><a href="" target="_blank">Socius</a></i></p>
+
+
+<h3>Abstract</h3>
+<p></p>
+<p>/p>
+
+<h3>Description</h3>
+<p></p>
+<p> Although extreme and rising levels of U.S. wealth inequality have generated much public and scientific interest, building intuition on the shape and scale of today’s wealth distribution remains difficult. Prior research tends to conceptualize and measure wealth inequality in one of two ways: As the concentration of assets among the super-wealthy (e.g. Keister 2014; Saez and Zucman 2020) – i.e., wealth concentration among the top 1% or even top 0.1% – or as a population-wide phenomenon of distributional inequality (e.g. Keister and Moller 2000; Killewald et al. 2016) – i.e., wealth inequality among the remaining 99%. Of course, both perspectives are valid and important; they simply focus on different slices of the overall wealth distribution, sometimes due to limitations of the data that are being used. Extreme concentration of wealth at the very top and very high levels of inequality within the remainder of the distribution thus co-exist. Yet, jointly visualizing both aspects and relating them to each other is challenging. This contribution addresses this challenge by providing an intuitive and interactive visualization of the distribution of U.S. wealth in 2019 that spans the full population, from households in net debt to multi-billionaires. </p>
+
+<p></p>
+
+<p> Figure 1a shows estimated household net worth in 2019 USDs based on the latest available 2019 wave of the Survey of Consumer Finances (SCF), which is widely held to be the gold-standard survey to capture U.S. households’ assets and liabilities. The figure plots the threshold value of each percentile of the wealth distribution.  In the interactive version (available here:  https://asherdvirdjerassi.github.io/wealth_thresholds_viz/), the exact estimated values are revealed upon hovering over each bar. For instance, highlighting the 75th percentile of the wealth distribution reveals that three quarters of all U.S. households in 2019 had a net worth of $404,101 or less. The most obvious visual impression of Figure 1 is the strong right-skew of the wealth distribution. In fact, in this initial display, the bottom half of the distribution all but disappears, reflective of the empirical reality that the wealth held by the majority of U.S. households pales in comparison to the wealth of, say, the wealthiest 20%.</p>
+
+<p></p>
+
+<p>However, the interactive figure also allows the reader to zoom in on select parts of the wealth distribution by highlighting the percentile range of interest. For instance, when selecting the bottom half of the distribution (by highlighting the left half of the x-axis), the chart is automatically re-scaled to reveal large wealth gaps even within that group of households – ranging from the median net worth of $121,760 to a net debt of -$93,110 at the 1st percentile. Such zoomed-in display also more clearly reveals that more than one in ten U.S. households are in net debt, that is they owe more than they own.</p>
+
+<p></p>
+
+<p>Zooming out again (by selecting “Reset Zoom”) and turning to the other end of the distribution, we note that the estimated net worth level required to be in the top 1% is more than $11.1 million. While the SCF goes to great lengths to oversample and interview households that are expected to hold very high wealth (see Supplemental Material for further details), it purposefully excludes the wealthiest households from its sampling frame due to concerns about identifiability. Prior research that draws on the SCF but also holds an interest in the very top of the wealth distribution has therefore jointly analyzed these data with wealth estimates from the Forbes 400 list (e.g., Wolff 2017; Saez and Zucman 2020). The Forbes 400 is a list of the wealthiest 400 individuals in the US, whose net worth is estimated annually by Forbes Magazine. The wealth level required to be part of the Forbes 400 in 2019 can be added to the figure by clicking on the subtitle “Include Forbes 400 wealth threshold” (to produce Figure 1b). The graph is again rescaled to add the $2.1 billion floor of the Forbes 400 list and now emphasizes the radical concentration of wealth at the very top as the remainder of the wealth distribution practically disappears from view.</p>
+
+<p></p>
+
+<p>In conclusion, our interactive visualization can serve as a tool to explore and gain intuition of the drastic inequality in wealth across the full population while at the same time allowing the display of a level of wealth at the top that could safely be described as “off the charts”. It is difficult to have both aspects of wealth inequality simultaneously in view and perhaps even in mind. Yet, it is important to jointly display and conceptually relate the fact that one in ten U.S. households (or, about 13.4 million households) have less than no wealth while a few hundred families hold wealth that towers over even the wealth at the 99th percentile. After all, these two aspects of wealth inequality may not be unrelated to each other.</p>
+
+<h3>Technical Note</h3>
+
+<p></p>
+<p>The visualization was produced using R and the highcharts library. Data and code to reproduce it are available at https://github.com/AsherDvirDjerassi/wealth_thresholds_viz. In the Supplemental Material, we describe our data, sample, and measures in more detail.</p>
+
+<h3>References</h3>
+<p></p>
+<p>Keister, Lisa A. 2014. “The One Percent.” Annual Review of Sociology 40(1):347–67.</p>
+<p>Keister, Lisa A., and Stephanie Moller. 2000. “Wealth Inequality in the United States.” Annual Review of Sociology 26(1): 63–81.</p>
+<p>Killewald, Alexandra, Fabian T. Pfeffer, and Jared N. Schachner. 2017. “Wealth Inequality and Accumulation.” Annual Review of Sociology 42:379–404.</p>
+<p>Saez, Emmanuel, and Gabriel Zucman. 2020. “The Rise of Income and Wealth Inequality in America: Evidence from Distributional Macroeconomic Accounts.” Journal of Economic Perspectives 34(4):3–26.</p>
+<p>Wolff, Edward N. 2017. A Century of Wealth in America. Cambridge: Belknap Press.</p>
+
+<h3>Acknowledgments</h3>
+<p></p>
+<p>We thank Abhraneel Sarma for his excellent research assistance, Adam Pearce for making available some of the javascript code behind the visualizations reported in Badger et al. (2018), and Socius reviewers for their valuable feedback. Our work on intergenerational wealth correlations has been supported by a grant from the Russell Sage Foundation and the W. K. Kellogg Foundation. The collection of PSID data used here was partly supported by the National Institutes of Health (R01 HD069609) and the National Science Foundation (1157698). Any opinions expressed are those of the authors alone and should not be construed as representing the opinions of the funding agencies.</p>
+
+<h3>Supplemental Material</h3>
+<p></p>
+<p>Background materials and supplementary analyses are available <a href="supplement.html">here</a></p>
+
+				</div>
+			</div>
+		</div>		
+	</body>
 </html>
