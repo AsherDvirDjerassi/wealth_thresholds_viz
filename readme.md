@@ -1,35 +1,19 @@
-#The U.S. Wealth Distribution: Off the Charts
+# The U.S. Wealth Distribution: Off the Charts
 
-This repository houses all elements of the 2022 Socius interactive visualization submission titled The U.S. Wealth Distribution: Off the Charts, including a replication package. This interactive visualization and article was authored by [Fabian Pfeffer](https://lsa.umich.edu/soc/people/faculty/fpfeffer.html) and [Asher Dvir-Djerassi]https://lsa.umich.edu/soc/people/current-graduate-students/asher-dvir-djerassi.html).
+This repository houses all elements of the 2022 Socius interactive visualization submission titled The U.S. Wealth Distribution: Off the Charts, including a replication package. This interactive visualization and article was authored by [Fabian Pfeffer](https://lsa.umich.edu/soc/people/faculty/fpfeffer.html) and [Asher Dvir-Djerassi](https://lsa.umich.edu/soc/people/current-graduate-students/asher-dvir-djerassi.html).
 
+* index.html contains html and css code that generates a webpage with the full article text, an embedded interactive visualization, and links to the full screen version of the interactive visualization and supplemental information. This webpage can be found at the following URL: https://asherdvirdjerassi.github.io/wealth_thresholds_viz
 
-* index.html contains html and css code that generates a webpage with the full article text, an embedded interactive visualization, and links to the fullscreen version of the interactive visualization and the supplemental information. This webpage can be found at the following URL: https://asherdvirdjerassi.github.io/wealth_thresholds_viz
+* supplement.html contains html and css code that generates a webpage with the full supplemental information that is contained in the article. This webpage can be found at the following URL: https://asherdvirdjerassi.github.io/wealth_thresholds_viz/supplement.html
 
-* supplement.html contains html and css code that generates a webpage with the full supplemental information. This webpage can be found at the following URL: https://asherdvirdjerassi.github.io/wealth_thresholds_viz/supplement.html
+* figure1.html and the directory lib/ contains the html, css, and js code that produces the interactive visualization. 
 
-* 
+* socius_wealth_viz.R is the R replication package that allows any user to directly reproduce figure1. This R script directly downloads the data used in the construction of figure1 and, via the Highcharter library, produces the interactive visualization.  
 
-replication package and dataset of the paper published at ICSE 2020 (SEIP track) with the title How do you Architect your Robots? State of the Practice and Guidelines for ROS-based Systems.
+* SCFP2019.zip is a zipped csv file of the 2019 Survey of Consumer Finances, which socius_wealth_viz.R downloads from the Federal Reserve website. 
 
-This study has been designed, developed, and reported by the following investigators:
+* forbes_400_2019.csv is a csv of the net worth of the Forbes 400 for 2019, which is acquired by socius_wealth_viz.R via scraping the Forbes magazine website.
 
-Ivano Malavolta (Vrije Universiteit Amsterdam)
-Grace Lewis (Software Engineering Institute, Carnegie Mellon University)
-Bradley Schmerl (Institute for Software Research, Carnegie Mellon University)
-Patricia Lago (Vrije Universiteit Amsterdam)
-David Garlan (Institute for Software Research, Carnegie Mellon University)
+# Acknowledgments
 
-#
-Reported in "index.html" and
-Contained in
-"Animations/1-mobility-rates.html"
-"Animations/2-wealth-structure.html"
-Supplementary analyses
-Reported in "supplement.html" and
-Contained in
-"Animations/s1-models.html"
-"Animations/s2-quartiles.html"
-"Animations/s2-terciles.html"
-"Sankey/1-sankey-mobility-rates.html"
-"Sankey/2-sankey-wealth-structure.html"
-Acknowledgments
+The visualization was created with support from the Stone Center for Inequality Dynamics (CID) and a NICHD training grant to the Population Studies Center at the University of Michigan (T32HD007339). The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
