@@ -167,4 +167,6 @@ figure1 <- highchart() %>%
     borderWidth = 1   # No border on the tooltip shape
   ) 
 
+# In order to export figure1 so that the height of the visualization stretches the full length of the page, run this script in RStudio, and  export and 'Save as Web Page'. 
 save_html(figure1, "figure1.html")
+
