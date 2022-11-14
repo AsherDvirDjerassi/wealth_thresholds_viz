@@ -6,7 +6,7 @@ This repository houses all elements of the 2022 Socius interactive visualization
 
 * supplement.html contains html and css code that generates a webpage with the full supplemental information that is contained in the article. This webpage can be found at the following URL: https://asherdvirdjerassi.github.io/wealth_thresholds_viz/supplement.html
 
-* [figure1.html](figure1.hmtl) and the directory lib/ contains the html, css, and js code that produces the interactive visualization. 
+* [figure1.html](/figure1.hmtl) and the directory lib/ contains the html, css, and js code that produces the interactive visualization. 
 
 * socius_wealth_viz.R is the R replication package that allows any user to directly reproduce figure1. This R script directly downloads the data used in the construction of figure1 and, via the Highcharter library, produces the interactive visualization.  
 
